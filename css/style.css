@@ -1,0 +1,136 @@
+
+/**----------------Jumbotron--------------**/
+/**CSS Reset**/
+
+html,body{
+	margin:0%;
+	box-sizing: border-box;
+	overflow-x:hidden;
+}
+/**-------------Responsiveness-------------**/
+
+@media only screen and (max-width: 750px){
+	.navbar .nav-menu, .navbar .nav-items{
+		flex-direction: column;
+	}
+	.navbar .nav-menu .collapse{
+		display:block;
+	}
+}
+/**-----Global Classes---------**/
+a{
+	text-decoration: none;
+	color: var(--text-gray);
+}
+
+ul{
+	list-style: none;
+}
+/**----------------Nav Bar--------------**/
+.navbar{
+	background: white;
+	padding: 0 2rem;
+	height: 0rem; /*collapse navigation menu*/
+	min-height: 15vh; /*desktop view*/
+	overflow: hidden;
+	font-family: var(--OpenSans);
+	transition: 0.6s linear;
+}
+.flex-row{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.navbar .nav-items{
+	display: flex;
+	margin:0;
+}
+.navbar .nav-menu{
+	justify-content: space-between;
+}
+.navbar .logo img{
+	height: auto;
+	width: auto;
+	max-height: 200px;
+	max-width: 200px;
+}
+.navbar .nav-items .nav-link{
+	padding: 1.6rem 1rem;
+	font-size: 1.2rem;
+	position: relative;
+}
+.navbar .nav-items .nav-link:hover{
+	background-color: var(--midnight-blue);
+}
+
+.navbar .nav-items .nav-link:hover a{
+	color: var(--white);
+}
+.navbar .collapse{
+	position: absolute;
+	top:0%;
+	width: 80%;
+	cursor: pointer;
+	padding: 1.2rem 0;
+	display:none;
+}
+.navbar .collapse .hamburger{
+	display: flex;
+	justify-content: flex-end;
+}
+.navbar .collapse .hamburger i{
+	font-size: 1.5rem;
+	color: var(--text-gray);
+}
+.uncollapse{
+	height: 28rem;
+}
+.join{
+	text-align: center;
+	margin-top: 20px;
+}
+.join{
+	border:1px solid var(--midnight-blue);
+	color: white;
+	border-radius: 12px;
+	background-color: var(--midnight-blue);
+	padding: 0.3rem 1.0rem;
+	font-size: 1.2rem;
+	font-family: var(--Lexendexa);
+}
+.join:hover{
+	background-color: var(--light-blue);
+}
+.social{
+	justify-content: flex-end;
+	display: flex;
+	padding: 12rem;
+
+}
+
+
+
+/**Google Fonts: 'OPen Sans', 'Roboto', "lexend exa**/ 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap');
+
+/**GLobal Variables**/
+:root{
+	/*Theme Font Family*/
+	--OpenSans: 'Open Sans', sans-serif;
+	--Roboto: 'Roboto', sans-serif;
+	--Lexendexa: 'Lexend Exa', sans-serif;
+
+	/*Theme Colors*/
+	--text-gray: #3f4954;
+	--text-light: #686666da;
+	--bg-color: #0f0f0f;
+	--white: #ffffff;
+	--primary-blue: #28558c;
+	--light-blue: #3784d8;
+	--midnight-blue: #3f669d;
+
+	/*Gradient Color*/
+	--gradientblue: linear-gradient (120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+	{
