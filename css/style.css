@@ -1,5 +1,5 @@
 
-/**----------------Jumbotron--------------**/
+
 /**CSS Reset**/
 
 html,body{
@@ -16,6 +16,9 @@ html,body{
 	.navbar .nav-menu .collapse{
 		display:block;
 	}
+	main .jumbotron .jumbotron-contents .btn-jumbotron{
+		max-width: 750px;
+	}
 }
 /**-----Global Classes---------**/
 a{
@@ -25,6 +28,26 @@ a{
 
 ul{
 	list-style: none;
+}
+h1{
+	font-family: var(--Roboto);
+	font-size: 2rem;
+}
+h2{
+	font-family:var(--Roboto);
+	font-size: 1.7rem;
+}
+h3{
+	font-family: var(--Pacifico);
+	font-size: 1.5rem;
+}
+button.btn{
+	border:none;
+	border-radius: 2rem;
+	padding: 1rem 3rem;
+	font-size: 1rem;
+	font-family: var(--Roboto);
+	cursor:pointer;
 }
 /**----------------Nav Bar--------------**/
 .navbar{
@@ -108,11 +131,74 @@ ul{
 
 }
 
+/**----------------Jumbotron--------------**/
 
+main .jumbotron{
+	background: url('../assets/background2.jpg');
+	background-size: 100% 130%;
+	object-fit: cover;
+	object-position: bottom;
+	background-repeat: no-repeat;
+	display:flex;
+	justify-content: center;
+	height: 85vh;
+	
+}
+main .jumbotron .jumbotron-contents{
+	padding-top: 6rem;
+	text-align: center;
+	color: white;
+	margin: 0.2rem;
+	padding-top: 10rem;
+}
+main .jumbotron .jumbotron-contents h1,h3{
+	margin: 0.6rem;
+}
+main .jumbotron .btn-jumbotron{
+	margin: 1.5rem;
+	background: var(--light-blue);
+	border: none;
+	border-radius: 2rem;
+	padding: 0.9rem 1.8rem;
+	font-size: 1.1rem;
+	font-family: var(--Roboto);
+	cursor:pointer;
+}
+main .jumbotron .btn-jumbotron:hover{
+	background: transparent;
+	border: 1px solid var(--white);
+	color: var(--white);
+}
+main .jumbotron .overlay{
+	position: absolute;
+	width:50%;
+	height: 85%;
+ 	color: white;
+	align-items: center;
+	background-color: rgba(17, 25, 37, 0.5);
+	z-index: 2;
+}
+/**------------------------Carousel--------------**/
+main .carousel-section{
+	height: 100vh;
+	width: 100%;
+}
+main .carousel-section .cards{
+	padding-top: 7rem;
+}
+main .cards .card-item{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	width: 80%;
+	margin: 2rem 2rem;
+	box-shadow: 0 15px 15px rgba(0,0,0,0.3);
+}
 
 /**Google Fonts: 'OPen Sans', 'Roboto', "lexend exa**/ 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 /**GLobal Variables**/
 :root{
@@ -120,6 +206,7 @@ ul{
 	--OpenSans: 'Open Sans', sans-serif;
 	--Roboto: 'Roboto', sans-serif;
 	--Lexendexa: 'Lexend Exa', sans-serif;
+	--Pacifico: 'Pacifico', cursive;
 
 	/*Theme Colors*/
 	--text-gray: #3f4954;
@@ -133,4 +220,4 @@ ul{
 	/*Gradient Color*/
 	--gradientblue: linear-gradient (120deg, #a1c4fd 0%, #c2e9fb 100%);
 
-	{
+{

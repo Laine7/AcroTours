@@ -9,9 +9,11 @@
 	<link rel="stylesheet" type="text/css" href="./css/all.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="./js/main.js"></script>
+	<link rel="stylesheet"  href="./css/owl.carousel.min.css">
+	<link rel="stylesheet"  href="./css/owl.theme.default.min.css">
 </head>
 <body>
-	<!-------------------Nav Bar-------------------->
+		<!-------------------Nav Bar-------------------->
 <nav class="navbar">
 	<div class="nav-menu flex-row">	
 		<div class="logo"><a href="#"><img src= "./assets/logo.png" alt="logo"> </a>
@@ -34,9 +36,31 @@
 			<button type="button" class="join">JOIN</button>
 		</div>
 	</div>
-		<div class="social">
-			<i class="fab fa-facebook-square"></i>
-		</div>
 </nav>
+<main>
+	<!----------------------Jumbotron---------------->
+	<section class="jumbotron">
+		<div class="overlay">
+		<div class="jumbotron-contents">
+				<h3>Tours and Travels</h3>
+				<h1>Discover Amazing Places</h1>
+				<button class="btn-jumbotron">Explore</button>
+		</div>
+		</div>
+	</section>
+	<!------------------------Carousel--------------->
+	<section>
+	<div class="carousel-section">
+		<div class= "owl-carousel owl-theme cards">
+			<div class="card-item">
+				<img src= "./assets/mayon-volcano-990871.jpg" alt="Mayon Volcano">
+				<h3>Mt. Mayon</h3>
+				<button class="btn btn-carousel">Description</button>
+			</div>
+		</div>
+	</div>
+	</section>
+</main>
+	<script src="./js/owl.carousel.min.js"></script>
 </body>
 </html>

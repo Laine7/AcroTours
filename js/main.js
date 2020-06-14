@@ -7,4 +7,5 @@ $(document) .ready (function () {
     $toggleCollapse.click (function () {
         $nav.toggleClass ('uncollapse');
     })
+    $(".owl-carousel") .owlCarousel();
 })
