@@ -194,6 +194,11 @@ main .cards .card-item{
 	margin: 2rem 2rem;
 	box-shadow: 0 15px 15px rgba(0,0,0,0.3);
 }
+main .cards .btn-card{
+	background: var(--gradientblue);
+	margin: 1rem;
+	padding: 0.7rem 2rem;
+}
 
 /**Google Fonts: 'OPen Sans', 'Roboto', "lexend exa**/ 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -219,5 +224,4 @@ main .cards .card-item{
 
 	/*Gradient Color*/
 	--gradientblue: linear-gradient (120deg, #a1c4fd 0%, #c2e9fb 100%);
-
-{
+}
